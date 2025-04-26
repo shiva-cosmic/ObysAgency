@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Gilroy";
+  font-family: "Plain Light";
   color: #fff;
 }
 
@@ -18,8 +18,19 @@ body {
   position: fixed;
   z-index: 999;
   background-color: #0b0b0b;
+  padding: 25vh 10vw;
 }
-/*#0B0B0B*/
+
+.line {
+  background-color: red;
+  height: fit-content;
+}
+.line h1 {
+  font-size: 6.5vw;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+
 #main {
   position: relative;
   background-color: #111;
