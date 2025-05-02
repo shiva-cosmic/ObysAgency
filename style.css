@@ -214,3 +214,14 @@ body {
   left: 80%;
   z-index: 999;
 }
+#video-cursor {
+  background-color: #ffa63d;
+  height: 8vw;
+  width: 8vw;
+  border-radius: 50%;
+  position: absolute;
+
+  top: -10;
+  left: 80%;
+  z-index: 999;
+}
