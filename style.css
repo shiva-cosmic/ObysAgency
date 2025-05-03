@@ -209,8 +209,10 @@ body {
   width: 8vw;
   border-radius: 50%;
   position: absolute;
-
   top: -10;
   left: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   z-index: 999;
 }
