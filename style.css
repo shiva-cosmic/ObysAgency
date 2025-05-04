@@ -234,3 +234,7 @@ body {
   background-color: rgb(61, 61, 61);
   position: relative;
 }
+#page4-content {
+  width: 72 vw;
+  margin-left: 28%;
+}
