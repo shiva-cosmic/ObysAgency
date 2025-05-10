@@ -454,13 +454,3 @@ body {
   font-weight: 500;
   font-size: 1vw;
 }
-#footer-div h5 {
-  font-size: 1.4vw;
-  font-weight: 500;
-  /* margin: 0.1vh 0; */
-}
-
-#footer > h5 {
-  font-weight: 500;
-  font-size: 1vw;
-}
