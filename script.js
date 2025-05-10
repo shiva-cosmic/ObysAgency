@@ -67,3 +67,5 @@ function cursorAnimation() {
 
 loadingAnimation();
 cursorAnimation();
+loadingAnimation();
+cursorAnimation();
