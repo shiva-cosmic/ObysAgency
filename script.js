@@ -1,3 +1,5 @@
+function locomotiveAnimation() {}
+
 function loadingAnimation() {
   var tl = gsap.timeline();
   tl.from(".line h1", {
