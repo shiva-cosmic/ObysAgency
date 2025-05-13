@@ -11,7 +11,7 @@ function locomotiveAnimation() {
   locoScroll.on("scroll", ScrollTrigger.update);
 
   // tell ScrollTrigger to use these proxy methods for the "#main" element since Locomotive Scroll is hijacking things
-  ScrollTrigger.scrollerProxy(".smooth-scroll", {
+  ScrollTrigger.scrollerProxy("#main", {
     scrollTop(value) {
       return arguments.length
         ? locoScroll.scrollTo(value, 0, 0)
@@ -26,7 +26,7 @@ function locomotiveAnimation() {
       };
     },
     // LocomotiveScroll handles things completely differently on mobile devices - it doesn't even transform the container at all! So to get the correct behavior and avoid jitters, we should pin things with position: fixed on mobile. We sense it by checking to see if there's a transform applied to the container (the LocomotiveScroll-controlled element).
-    pinType: document.querySelector(".smooth-scroll").style.transform
+    pinType: document.querySelector("#main").style.transform
       ? "transform"
       : "fixed",
   });
@@ -92,6 +92,14 @@ function loadingAnimation() {
     y: 140,
     stagger: 0.2,
   });
+
+  tl.from(
+    "#hero1, #page2",
+    {
+      opacity: 0,
+    },
+    "-=1.2"
+  );
 }
 
 function cursorAnimation() {
@@ -107,4 +115,4 @@ function cursorAnimation() {
 
 loadingAnimation();
 cursorAnimation();
-loadingAnimation();
+locomotiveAnimation();
