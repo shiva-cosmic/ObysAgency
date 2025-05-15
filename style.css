@@ -24,6 +24,7 @@ body {
   z-index: 9999;
   mix-blend-mode: difference;
   transform: translate(-50%, -50%);
+  pointer-events: none;
 }
 
 #loader {
@@ -242,6 +243,22 @@ body {
   width: 100%;
   background-color: rgb(61, 61, 61);
   position: relative;
+  padding: 7vh 0;
+}
+#page3 h1 {
+  font-size: 7vw;
+  text-transform: uppercase;
+  position: relative;
+}
+
+#page3 h1::before {
+  content: "03";
+  position: absolute;
+  font-size: 4vw;
+  font-weight: 100;
+  left: -12%;
+  top: 8%;
+  font-family: "silk serif";
 }
 #page4 {
   min-height: 100vh;
@@ -251,7 +268,7 @@ body {
   padding: 7vh 0;
 }
 #page4-content {
-  width: 72 vw;
+  width: 72vw;
   margin-left: 28%;
   position: relative;
 }
