@@ -26,17 +26,6 @@ body {
   transform: translate(-50%, -50%);
   pointer-events: none;
 }
-#crsr {
-  height: 2vw;
-  width: 2vw;
-  border-radius: 50%;
-  border: 1px solid #ffffffbe;
-  position: fixed;
-  z-index: 9999;
-  mix-blend-mode: difference;
-  transform: translate(-50%, -50%);
-  pointer-events: none;
-}
 
 #loader {
   height: 100%;
