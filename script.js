@@ -114,5 +114,7 @@ function cursorAnimation() {
 }
 
 loadingAnimation();
-cursorAnimation();
+// cursorAnimation();
 locomotiveAnimation();
+
+function sheryAnimation() {}
