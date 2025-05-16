@@ -264,6 +264,11 @@ body {
 #page3 .underline {
   margin-left: 28vw;
 }
+
+#image-div-container {
+  background-color: red;
+}
+
 #page4 {
   min-height: 100vh;
   width: 100%;
