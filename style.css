@@ -305,7 +305,9 @@ body {
   border-radius: 50%;
   display: flex;
   margin-top: 23vh;
+  position: relative;
   align-items: center;
+  flex-shrink: 0;
   justify-content: center;
   margin-left: 10vw;
 }
@@ -320,15 +322,53 @@ body {
   border: 2px solid #fff;
   border-radius: 50%;
   display: flex;
+  position: relative;
   /* margin-top: 23vh; */
+  flex-shrink: 0;
   align-items: center;
   justify-content: center;
   /* margin-left: 10vw; */
+  margin-top: 2vw;
+  margin-right: 3vw;
 }
 
 .page3-circle2 svg {
   height: 30%;
   rotate: -45deg;
+}
+
+.circle-in {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all ease 0.3s;
+  scale: 0;
+  border-radius: 50%;
+}
+
+.circle-in p {
+  font-size: 0.95vw;
+  color: #000;
+  font-weight: 500;
+  width: 60%;
+  scale: 0;
+  transition: all ease 0.3s;
+  transition-delay: 0.6s;
+}
+
+.page3-circle1:hover .circle-in {
+  scale: 1;
+}
+
+.page3-circle1:hover p {
+  scale: 1;
 }
 
 #page4 {
