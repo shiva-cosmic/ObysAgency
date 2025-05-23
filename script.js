@@ -154,3 +154,7 @@ loadingAnimation();
 cursorAnimation();
 locomotiveAnimation();
 sheryAnimation();
+loadingAnimation();
+cursorAnimation();
+locomotiveAnimation();
+sheryAnimation();
