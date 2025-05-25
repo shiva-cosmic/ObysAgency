@@ -549,24 +549,27 @@ body {
   /* background-color: red; */
   position: relative;
   padding-left: 28vw;
+  margin-top: 5vw;
   padding-right: 2vw;
 }
 
 #footer h1 {
-  font-size: 7vw;
+  font-size: 7.2vw;
   text-transform: uppercase;
-
   /* background-color: blue; */
   position: relative;
 }
+
 #footer h1::before {
   content: "04";
   position: absolute;
-  font-size: 4vw;
+  font-size: 3vw;
   font-weight: 100;
   left: -12%;
   top: 8%;
   font-family: "silk serif";
+  left: -13%;
+  top: 6%;
 }
 
 .underline {

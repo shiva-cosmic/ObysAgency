@@ -192,25 +192,50 @@ function sheryAnimation() {
   });
 }
 
+function flagAnimation() {
+  document.addEventListener("mousemove", function (dets) {
+    gsap.to("#flag", {
+      x: dets.x,
+      y: dets.y,
+    });
+  });
+
+  document.querySelector("#hero3").addEventListener("mouseenter", function () {
+    gsap.to("#flag", {
+      opacity: 1,
+    });
+  });
+  document.querySelector("#hero3").addEventListener("mouseleave", function () {
+    gsap.to("#flag", {
+      opacity: 0,
+    });
+  });
+}
+
+function footerAnimation() {
+  var footer_text = document.querySelector("#footer > h1");
+  footer_text.addEventListener("mousemove", function () {
+    gsap.to("#footer h1", {
+      webkitTextStroke: "1px #fff",
+      fontStyle: "italic",
+      webkitTextStroke: "2px #fff",
+      color: "transparent",
+    });
+  });
+  footer_text.addEventListener("mouseleave", function () {
+    console.log("mouse_left");
+    gsap.to("#footer h1", {
+      fontFamily: "Plain Light",
+      fontStyle: "normal",
+      webkitTextStroke: "0px",
+      color: "white",
+    });
+  });
+}
+
 loadingAnimation();
 cursorAnimation();
 locomotiveAnimation();
 sheryAnimation();
-
-document.addEventListener("mousemove", function (dets) {
-  gsap.to("#flag", {
-    x: dets.x,
-    y: dets.y,
-  });
-});
-
-document.querySelector("#hero3").addEventListener("mouseenter", function () {
-  gsap.to("#flag", {
-    opacity: 1,
-  });
-});
-document.querySelector("#hero3").addEventListener("mouseleave", function () {
-  gsap.to("#flag", {
-    opacity: 0,
-  });
-});
+flagAnimation();
+footerAnimation();
