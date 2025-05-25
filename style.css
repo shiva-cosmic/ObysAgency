@@ -624,3 +624,6 @@ body {
   z-index: 999;
   position: relative;
 }
+
+@media (max-width: 600px) {
+}
