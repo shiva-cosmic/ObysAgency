@@ -28,8 +28,8 @@ body {
   height: 100%;
   width: 100%;
   position: fixed;
-  z-index: 999;
-  background-color: #0b0b0b;
+  z-index: 9999;
+  background-color: #030303;
   padding: 25vh 10vw;
 }
 
@@ -109,6 +109,7 @@ body {
 #main {
   position: relative;
   background-color: #151515;
+  z-index: 99;
 }
 
 #page1 {
@@ -265,7 +266,7 @@ body {
 #page3 h1::before {
   content: "02";
   position: absolute;
-  font-size: 4vw;
+  font-size: 3vw;
   font-weight: 100;
   left: -12%;
   top: 8%;
@@ -292,7 +293,7 @@ body {
   position: relative;
   overflow: hidden;
   flex-shrink: 0;
-  margin: 2vw;
+  margin: 1vw;
   /* background-color: blue; */
 }
 .image-div:nth-child(1) {
@@ -396,7 +397,7 @@ body {
   /* background-color: rgb(61, 61, 61); */
   position: relative;
   padding: 7vh 0;
-  margin-top: 40vh;
+  /* margin-top: 40vh; */
 }
 #page4-content {
   width: 72vw;
